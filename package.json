@@ -1,5 +1,5 @@
 {
-  "name": "ernestas_package",
+  "name": "paulius_package",
   "version": "1.0.0",
   "description": "!(images/banana.gif?raw=true \"Gif\")",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Katamaranas/Front_end_2_lygis.git"
+    "url": "git+https://github.com/Noldor5150/frontend2season.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Katamaranas/Front_end_2_lygis/issues"
+    "url": "https://github.com/Noldor5150/frontend2seasons/issues"
   },
-  "homepage": "https://github.com/Katamaranas/Front_end_2_lygis#readme",
+  "homepage": "https://github.com/Noldor5150/frontend2season#readme",
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-assemble": "^0.6.3",
