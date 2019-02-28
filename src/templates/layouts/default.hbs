@@ -2,9 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/app.css">
     <title></title>
   </head>
   <body>
+    {{>navbar}}
+
     {{body}}
+
+    {{#is basename 'index'}}
+    {{>footer}}
+    {{/is}}
+    <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
   </body>
 </html>
