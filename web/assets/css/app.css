@@ -9629,15 +9629,50 @@ a.text-dark:hover, a.text-dark:focus {
   fill: salmon;
 }
 
+.section-container {
+  margin-top: 90px;
+  margin-left: 255px;
+}
+
+.boxes {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background: #fff;
+  padding: 15px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.v-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
-  background-color: #ededed;
+  background-color: #ebebeb;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 .topbar {
@@ -9714,15 +9749,46 @@ ul {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.side-menu__lists__list:hover {
-  background-color: magenta;
+.side-menu__lists__list.active a {
+  color: red;
 }
-.side-menu__lists__title {
+.side-menu__lists__list__title {
   padding: 12px 20px;
   font-size: 12px;
 }
 
-.division {
-  margin-top: calc(70px + 10px);
-  margin-left: calc(240px + 10px);
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: relative;
+}
+.circle--success {
+  background: rgba(102, 187, 106, 0.75);
+  border-color: rgba(102, 187, 106, 0.35);
+}
+.circle--danger {
+  background: rgba(238, 110, 115, 0.75);
+  border-color: rgba(238, 110, 115, 0.35);
+}
+.circle--primary {
+  background: rgba(63, 81, 181, 0.75);
+  border-color: rgba(63, 81, 181, 0.35);
+}
+.circle--secondary {
+  background: rgba(156, 39, 176, 0.75);
+  border-color: rgba(156, 39, 176, 0.35);
+}
+.circle .svg-icon {
+  height: 40px;
+  width: 40px;
+  fill: black;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

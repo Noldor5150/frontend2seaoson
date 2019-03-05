@@ -20,21 +20,21 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-       svg{
-
+       svg {
        }
      }
       &:after{
         @include arrow();
       }
-    }
-    &__list:hover{
-      background-color: magenta;
-    }
-
+      &.active{
+        a {
+          color: red;
+        }
+      }
     &__title{
       padding: 12px 20px;
       font-size: 12px;
     }
   }
+}
 }
