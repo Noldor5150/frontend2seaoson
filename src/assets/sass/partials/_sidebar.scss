@@ -24,7 +24,7 @@
        }
      }
       &:after{
-        @include arrow();
+        @include arrow($rotate: 45deg);
       }
       &.active{
         a {
