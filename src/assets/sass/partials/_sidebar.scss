@@ -12,6 +12,12 @@
     &__list{
       padding: 12px 20px;
       position: relative;
+      border-left: 3px solid #fff;
+      &:hover{
+        a {
+          color: $default-bg;
+        }
+      }
 
       a{
         display: -webkit-box;
@@ -21,14 +27,17 @@
             -ms-flex-align: center;
                 align-items: center;
        svg {
+          fill: $mid-grey;
        }
      }
       &:after{
-        @include arrow($rotate: 45deg);
+        @include arrow($rotate: -45deg);
       }
       &.active{
-        a {
-          color: red;
+        border-color: $default-bg;
+        background-color: $mid-grey;
+        &:hover{
+          text-decoration: none;
         }
       }
     &__title{

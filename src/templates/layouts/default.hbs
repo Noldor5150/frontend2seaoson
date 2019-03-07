@@ -2,23 +2,31 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="assets/css/app.css">
+  {{#is default.lang 'lt'}}
+            <link rel="stylesheet" href="../assets/css/app.css">
+        {{else}}
+            <link rel="stylesheet" href="assets/css/app.css">
+        {{/is}}
   <title></title>
 </head>
 <body>
   {{>navbar}}
   {{>sidebar}}
   <div class="section-container">
+    {{title}}
     {{body}}
   </div>
-
 
   {{#is basename 'index'}}
   {{>footer}}
   {{/is}}
   <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
-  <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
 
+  {{#is default.lang 'lt'}}
+  <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+   {{else}}
+   <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+   {{/is}}
   <script type="text/javascript">
   var ctx = document.getElementById("myChart").getContext('2d');
   var myChart = new Chart(ctx, {
