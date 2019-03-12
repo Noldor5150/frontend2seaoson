@@ -9,6 +9,9 @@
   background: #fff;
   padding: 15px;
   margin-bottom: 15px;
+  .circle{
+    @include circle();
+  }
   &__title{
 
   }

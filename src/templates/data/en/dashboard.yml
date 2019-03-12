@@ -3,3 +3,6 @@ stats:
     revenue: Total revenue
     sales: Today's sales
     conversion: conversion
+dash:
+  latest_project: Latest project
+  our_awesome_text_goes_here: Our awesome text goes here

@@ -25,14 +25,28 @@
     &__lists {
 
       &--left {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
       }
       &--right {
         float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
       }
       &__link {
         margin-right: 20px;
+      }
+    }
+    .dropdown-menu{
+      &__item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .circle{
+          @include circle($height: 50px, $width: 50px)
+        }
       }
     }
   }
