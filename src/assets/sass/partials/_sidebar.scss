@@ -10,7 +10,7 @@
   padding: 20px 0 80px;
   &__lists{
     &__list{
-      padding: 12px 20px;
+      padding: 12px;
       position: relative;
       border-left: 3px solid #fff;
       &:hover{
@@ -18,18 +18,17 @@
           color: $default-bg;
         }
       }
-
       a{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-       svg {
+        -ms-flex-align: center;
+        align-items: center;
+        svg {
           fill: $mid-grey;
-       }
-     }
+        }
+      }
       &:after{
         @include arrow($rotate: -45deg);
       }
@@ -40,10 +39,26 @@
           text-decoration: none;
         }
       }
-    &__title{
-      padding: 12px 20px;
-      font-size: 12px;
+      &__title{
+        padding: 12px 20px;
+        font-size: 12px;
+      }
     }
   }
-}
+  &--closed{
+    width: 70px;
+    .side-menu__lists{
+      &__list{
+        span{
+          display: none;
+        }
+        &:after{
+          display: none;
+        }
+      }
+      &__title{
+        display: none;
+      }
+    }
+  }
 }

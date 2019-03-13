@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-            <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/app.css">
   <title></title>
 </head>
 <body>
@@ -15,8 +15,8 @@
     </nav>
     <nav class="nav-bar nav-bar--right">
       <ul class="nav-bar__lists nav-bar__lists--left">
-        <li>
-          <a class="nav-bar__lists__link" href="#">
+        <li class="nav-bar__lists__link">
+          <a href="#" id="burger">
             <svg class="svg-icon">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
             </svg>
@@ -99,22 +99,24 @@
       </ul>
     </nav>
   </div>
-  <div class="side-menu">
+  <div id="side-menu" class="side-menu">
     <ul class ="side-menu__lists">
-      <li class = "side-menu__list">Main</li>
+      <li class = "side-menu__lists__title">
+        <span>Main</span>
+      </li>
       <li class = "side-menu__lists__list">
         <a href="#">
           <svg class="svg-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
           </svg>
-          Main
+          <span>Main</span>
         </a>
       </li>
       <li class = "side-menu__lists__list"><a href="#">
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        UI KIT
+        <span>UI KIT</span>
       </a>
     </li>
     <li class = "side-menu__lists__list">
@@ -122,7 +124,7 @@
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Typography
+        <span>Typography</span>
       </a>
     </li>
     <li class = "side-menu__lists__list">
@@ -130,7 +132,7 @@
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Components
+        <span>Components</span>
       </a>
     </li>
     <li class = "side-menu__lists__list">
@@ -138,7 +140,7 @@
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Icons
+        <span>Icons</span>
       </a>
     </li>
     <li class = "side-menu__lists__list">
@@ -146,25 +148,27 @@
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Forms
+        <span>Forms</span>
       </a>
     </li>
   </ul>
   <ul class ="side-menu__lists">
-    <li class = "side-menu__list">More</li>
+    <li class = "side-menu__lists__title">
+      <span>More</span>
+      </li>
     <li class = "side-menu__lists__list">
       <a href="#">
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Tables
+        <span>Tables</span>
       </a>
     </li>
     <li class = "side-menu__lists__list"><a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Charts
+      <span>Charts</span>
     </a>
   </li>
   <li class = "side-menu__lists__list">
@@ -172,7 +176,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Maps
+      <span>Maps</span>
     </a>
   </li>
   <li class = "side-menu__lists__list">
@@ -180,25 +184,27 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Mail
+      <span>Mail</span>
     </a>
   </li>
   </ul>
   <ul class ="side-menu__lists">
-    <li class = "side-menu__list">Extras</li>
+    <li class = "side-menu__lists__title">
+      <span>Extras</span>
+      </li>
     <li class = "side-menu__lists__list">
       <a href="#">
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Pages
+        <span>Pages</span>
       </a>
     </li>
     <li class = "side-menu__lists__list"><a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Extras
+      <span>Extras</span>
     </a>
   </li>
   <li class = "side-menu__lists__list">
@@ -206,7 +212,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Multi Level
+      <span>Multi Level</span>
     </a>
   </li>
   <li class = "side-menu__lists__list">
@@ -214,142 +220,21 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Dashboard
+      <span>Dashboard</span>
     </a>
   </li>
   </ul>
   </div>
-  <div class="section-container">
+  <div id="dashboard" class="section-container">
     <p>Welcome</p>
   </div>
 
   <div class="svg-sprite-container"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="home" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></symbol><symbol viewBox="0 0 24 24" id="target" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.94 11A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></symbol></svg></div>
-
-   <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
-  <script type="text/javascript">
-  var ctx = document.getElementById("myChart").getContext('2d');
-  var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero:true
-          }
-        }]
-      }
-    }
-  });
-</script>
-<script type="text/javascript">
-var ctx = document.getElementById("myChart1").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero:true
-        }
-      }]
-    }
-  }
-});
-</script>
-<script type="text/javascript">
-var ctx = document.getElementById("myChart2").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'radar',
-  data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero:true
-        }
-      }]
-    }
-  }
-});
-</script>
-<script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <script type="text/javascript" src="assets/js/chart.js"></script>
+  <script  type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script  type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

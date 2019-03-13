@@ -15,15 +15,25 @@
   -webkit-transform: rotate($rotate);
           transform: rotate($rotate);
 }
-
 @mixin circle($height: 80px, $width: 80px){
   height: $height;
   width: $width;
   border-radius: 50%;
   position: relative;
+  .svg-icon{
+    height: 40px;
+    width: 40px;
+    fill: black;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 .circle{
-
   &--border{
     border: 5px solid;
   }
@@ -43,16 +53,5 @@
     background: $color-secondary;
     border-color: $color-secondary-ol;
   }
-  .svg-icon{
-    height: 40px;
-    width: 40px;
-    fill: black;
-    top: 50%;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+
 }
