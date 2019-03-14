@@ -1,9 +1,7 @@
 .section-container{
   margin-top: $nav-height + 20;
   margin-left: $nav-left-width +15;
-  &--moved{
-    margin-left: 80px;
-  }
+
 }
 .boxes{
   -webkit-box-shadow: $box-shadow;
@@ -47,5 +45,32 @@
   }
   &--admin{
     color: $color-admin;
+  }
+}
+.sidenav-closed {
+    .topbar {
+        .nav-bar {
+            &--left {
+                width: $sidenav-closed-width;
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+    .section-container{
+        margin-left: $sidenav-closed-width +15;
+    }
+}
+.section-title{
+  &__nav{
+    span{
+      &:first-of-type{
+        &:after{
+          content:' /';
+        }
+      }
+
+    }
   }
 }
