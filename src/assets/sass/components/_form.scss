@@ -1,0 +1,42 @@
+@mixin default-label( $background: #fff, $selector: label){
+    #{$selector}{
+        position: absolute;
+        background: $background;
+        font-size: 16px;
+        color: $mid-grey; 
+        top: 18px;
+        left: 18px;
+        margin: 0;
+        transition: .2s ease all;
+        pointer-events: none;
+    }
+}
+
+@mixin default-input($background: #fff,$selector: input,  $height: $input-height){
+    #{$selector}{ 
+        width: 100%;
+        height: $height;   
+        border: $border;
+        border-radius: $border-radius; 
+        background: #fff;
+        color: $mid-grey; 
+        padding-left: 18px;
+        &:focus{
+            outline: none;
+            border-color:  $default-bg;
+            box-shadow: $box-shadow;
+        }
+        &:valid ~ label{
+            top: -7px;
+            padding: 0 6px;
+            font-size: 12px;
+        }
+        &:focus ~ label{
+            top: -7px;
+            padding: 0 6px;
+            font-size: 12px;
+        }
+    }
+    @include default-label($background);
+}
+
