@@ -1,0 +1,14 @@
+@mixin default-button($button-bg: #fff, $height: $input-height) {
+    width: 100%;
+    border-radius: 100px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid red;
+    $height: $input-height;
+
+    
+}

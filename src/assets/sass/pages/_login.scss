@@ -9,5 +9,8 @@
             margin-bottom: 20px;
             @include default-input();
         }
+        &____button{
+            @include default-button();
+        }
     }
 }
