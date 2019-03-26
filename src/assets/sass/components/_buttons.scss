@@ -1,14 +1,26 @@
-@mixin default-button($button-bg: #fff, $height: $input-height) {
-    width: 100%;
-    border-radius: 100px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    border: 2px solid red;
-    $height: $input-height;
-
-    
+@mixin default-button( $height: 50px, $background: $default-btn ) {
+   display: block;
+   width: auto;
+   height: $height;
+   line-height: $height;
+   background: $background;
+   border: 0;
+   border-radius: 100px;
+   color: #fff;
+   transition: $transition;
+   text-decoration: none;
+   text-align: center;
+   &:focus{
+       outline: none;
+   }
+   &:hover{
+       border: 0;
+       filter: brightness(85%);
+   }
+}
+.button{
+  @include default-button();
+  &--full-width{
+      width: 100%;
+  }
 }
